@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Evaluations
+of Plant
+Maintenance
+Information
+System [PMIS]</name>
+		</function>
+		<event defRef="2" id="2">
+			<name> Evaluation to
+be performed
+using the
+Logistics
+Information
+System</name>
+		</event>
+		<event defRef="3" id="3">
+			<name> Evaluation
+carried out</name>
+		</event>
+		<arc id="4">
+			<flow source="2" target="1"/>
+		</arc>
+		<arc id="5">
+			<flow source="1" target="3"/>
+		</arc>
+	</epc>
+</epml:epml>

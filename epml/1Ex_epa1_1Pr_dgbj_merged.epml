@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Vendor Down
+Payment
+Request</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Vendor Down
+Payment</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Vendor Down
+Payment
+Clearing</name>
+		</function>
+		<event defRef="4" id="4">
+			<name> Down payment
+can be cleared
+automatic.</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Down payment
+is agreed with
+vendor</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Down payment
+is to be
+cleared
+manually</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Vendor down
+payment
+request is
+created</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Clearing is
+posted</name>
+		</event>
+		<xor id="9">
+			<name/>
+		</xor>
+		<xor id="10">
+			<name/>
+		</xor>
+		<arc id="11">
+			<flow source="4" target="9"/>
+		</arc>
+		<arc id="12">
+			<flow source="5" target="1"/>
+		</arc>
+		<arc id="13">
+			<flow source="1" target="7"/>
+		</arc>
+		<arc id="14">
+			<flow source="9" target="3"/>
+		</arc>
+		<arc id="15">
+			<flow source="6" target="9"/>
+		</arc>
+		<arc id="16">
+			<flow source="7" target="2"/>
+		</arc>
+		<arc id="17">
+			<flow source="2" target="10"/>
+		</arc>
+		<arc id="18">
+			<flow source="3" target="8"/>
+		</arc>
+		<arc id="19">
+			<flow source="10" target="4"/>
+		</arc>
+		<arc id="20">
+			<flow source="10" target="6"/>
+		</arc>
+	</epc>
+</epml:epml>

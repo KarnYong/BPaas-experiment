@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Material
+Requirements
+Planning -
+Evaluation</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Overall
+Material
+Requirements
+Planning</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Material
+Requirements
+Planning -
+Individual</name>
+		</function>
+		<event defRef="4" id="4">
+			<name> Planning
+results or
+stock/ reqmts
+situation is
+processed</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Demand
+Program
+Created</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Planned Order
+Created
+Automatically</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Dependent
+Requirement
+Created</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Stock/
+requirements
+list to be
+processed</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> MRP list is
+created</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Purchase
+Requisition
+Created</name>
+		</event>
+		<and id="11">
+			<name/>
+		</and>
+		<or id="12">
+			<name/>
+		</or>
+		<or id="13">
+			<name/>
+		</or>
+		<xor id="14">
+			<name/>
+		</xor>
+		<event defRef="32" id="32">
+			<name> Forecast
+requirements
+generated</name>
+		</event>
+		<xor id="57">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="15">
+			<flow source="14" target="1"/>
+		</arc>
+		<arc id="16">
+			<flow source="12" target="6"/>
+		</arc>
+		<arc id="17">
+			<flow source="12" target="7"/>
+		</arc>
+		<arc id="18">
+			<flow source="12" target="9"/>
+		</arc>
+		<arc id="19">
+			<flow source="12" target="10"/>
+		</arc>
+		<arc id="20">
+			<flow source="1" target="4"/>
+		</arc>
+		<arc id="21">
+			<flow source="2" target="13"/>
+		</arc>
+		<arc id="22">
+			<flow source="5" target="11"/>
+		</arc>
+		<arc id="23">
+			<flow source="13" target="12"/>
+		</arc>
+		<arc id="26">
+			<flow source="3" target="13"/>
+		</arc>
+		<arc id="27">
+			<flow source="8" target="14"/>
+		</arc>
+		<arc id="28">
+			<flow source="9" target="14"/>
+		</arc>
+		<arc id="58">
+			<flow source="11" target="57"/>
+		</arc>
+		<arc id="60">
+			<flow source="57" target="2"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="65">
+			<flow source="32" target="11"/>
+		</arc>
+		<arc id="66">
+			<flow source="57" target="3"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

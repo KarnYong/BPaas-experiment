@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Customer
+Account
+Balance
+Interest
+Calculation</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Calculation
+of Interest on
+Arrears -
+Customers</name>
+		</function>
+		<event defRef="3" id="3">
+			<name> Interest to
+be calculated
+on account
+balances</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Interest on
+arrears to be
+calculated</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Interest
+calculation is
+completed</name>
+		</event>
+		<or id="6">
+			<name/>
+		</or>
+		<arc id="7">
+			<flow source="3" target="1"/>
+		</arc>
+		<arc id="8">
+			<flow source="1" target="6"/>
+		</arc>
+		<arc id="9">
+			<flow source="2" target="6"/>
+		</arc>
+		<arc id="10">
+			<flow source="6" target="5"/>
+		</arc>
+		<arc id="11">
+			<flow source="4" target="2"/>
+		</arc>
+	</epc>
+</epml:epml>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Difference
+processing</name>
+		</function>
+		<function defRef="2" id="2">
+			<name>Confirmation</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Stock removal
+processing</name>
+		</function>
+		<event defRef="4" id="4">
+			<name> TO item
+confirmed
+without
+differences</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Transfer
+order created
+manually</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Transfer
+order item
+with
+difference
+exists</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Stock removal
+to be carried
+out via WCU</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Material is
+removed from
+stock</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Goods
+movement is
+posted</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Difference
+must be
+adjusted in
+Inventory
+Management</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Transfer
+order item is
+confirmed</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Physical
+inventory is
+to be carried
+out</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Transfer
+order created
+automatically</name>
+		</event>
+		<and id="14">
+			<name/>
+		</and>
+		<and id="15">
+			<name/>
+		</and>
+		<xor id="16">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="17">
+			<name/>
+		</xor>
+		<xor id="18">
+			<name/>
+		</xor>
+		<xor id="19">
+			<name/>
+		</xor>
+		<function defRef="39" id="39">
+			<name> Confirmation
+of Removal f.
+Storage</name>
+		</function>
+		<xor id="87">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="22">
+			<flow source="17" target="3"/>
+		</arc>
+		<arc id="23">
+			<flow source="14" target="16"/>
+		</arc>
+		<arc id="25">
+			<flow source="18" target="7"/>
+		</arc>
+		<arc id="26">
+			<flow source="18" target="8"/>
+		</arc>
+		<arc id="27">
+			<flow source="5" target="17"/>
+		</arc>
+		<arc id="28">
+			<flow source="6" target="1"/>
+		</arc>
+		<arc id="30">
+			<flow source="1" target="15"/>
+		</arc>
+		<arc id="31">
+			<flow source="19" target="10"/>
+		</arc>
+		<arc id="32">
+			<flow source="19" target="12"/>
+		</arc>
+		<arc id="33">
+			<flow source="2" target="14"/>
+		</arc>
+		<arc id="34">
+			<flow source="15" target="19"/>
+		</arc>
+		<arc id="35">
+			<flow source="15" target="11"/>
+		</arc>
+		<arc id="36">
+			<flow source="3" target="18"/>
+		</arc>
+		<arc id="37">
+			<flow source="13" target="17"/>
+		</arc>
+		<arc id="88">
+			<flow source="87" target="2"/>
+			<name>1</name>
+		</arc>
+		<arc id="89">
+			<flow source="87" target="39"/>
+			<name>2</name>
+		</arc>
+		<arc id="90">
+			<flow source="8" target="87"/>
+		</arc>
+		<arc id="93">
+			<flow source="39" target="14"/>
+		</arc>
+		<arc id="94">
+			<flow source="16" target="9"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="95">
+			<flow source="16" target="6"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="96">
+			<flow source="16" target="4"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

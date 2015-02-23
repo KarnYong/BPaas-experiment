@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Goods Issue
+Processing</name>
+		</function>
+		<event defRef="2" id="2">
+			<name> Retrograde
+withdrawal to
+be posted</name>
+		</event>
+		<event defRef="3" id="3">
+			<name> Material is
+not available</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Material is
+issued</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Material
+withdrawal is
+to be posted</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Goods issue
+is posted</name>
+		</event>
+		<and id="7">
+			<name/>
+		</and>
+		<xor id="8">
+			<name/>
+		</xor>
+		<xor id="9">
+			<name/>
+		</xor>
+		<arc id="10">
+			<flow source="2" target="8"/>
+		</arc>
+		<arc id="11">
+			<flow source="1" target="9"/>
+		</arc>
+		<arc id="12">
+			<flow source="8" target="1"/>
+		</arc>
+		<arc id="13">
+			<flow source="5" target="8"/>
+		</arc>
+		<arc id="14">
+			<flow source="7" target="4"/>
+		</arc>
+		<arc id="15">
+			<flow source="7" target="6"/>
+		</arc>
+		<arc id="16">
+			<flow source="9" target="3"/>
+		</arc>
+		<arc id="17">
+			<flow source="9" target="7"/>
+		</arc>
+	</epc>
+</epml:epml>

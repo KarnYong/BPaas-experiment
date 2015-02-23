@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Capacity
+Evaluation</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Capacity
+Dispatching
+and Leveling</name>
+		</function>
+		<event defRef="3" id="3">
+			<name> Capacity
+situation is
+to be
+evaluated</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Maintenance
+order is
+released</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Capacity is
+not available</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Sequencing to
+be carried out</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Capacity is
+available</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Capacity
+Leveling or
+Planning Is
+Performed</name>
+		</event>
+		<or id="10">
+			<name/>
+		</or>
+		<xor id="11">
+			<name/>
+		</xor>
+		<event defRef="25" id="25">
+			<name> Production
+order is
+released</name>
+		</event>
+		<or id="31">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<or id="43">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<arc id="14">
+			<flow source="1" target="11"/>
+		</arc>
+		<arc id="15">
+			<flow source="5" target="10"/>
+		</arc>
+		<arc id="16">
+			<flow source="6" target="10"/>
+		</arc>
+		<arc id="17">
+			<flow source="11" target="5"/>
+		</arc>
+		<arc id="18">
+			<flow source="11" target="7"/>
+		</arc>
+		<arc id="19">
+			<flow source="2" target="8"/>
+		</arc>
+		<arc id="21">
+			<flow source="10" target="2"/>
+		</arc>
+		<arc id="34">
+			<flow source="25" target="31"/>
+			<name>2</name>
+		</arc>
+		<arc id="45">
+			<flow source="31" target="43"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="46">
+			<flow source="43" target="1"/>
+		</arc>
+		<arc id="51">
+			<flow source="4" target="43"/>
+			<name>1</name>
+		</arc>
+		<arc id="53">
+			<flow source="3" target="31"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

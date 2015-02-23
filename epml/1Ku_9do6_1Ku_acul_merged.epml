@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Difference
+Processing
+During Picking</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Confirmation
+of Picking</name>
+		</function>
+		<event defRef="3" id="3">
+			<name> Transfer
+order item
+with
+difference
+exists</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Material is
+removed from
+stock</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Goods
+movement is
+posted</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Inventory
+management
+posting
+already
+carried out</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Transfer
+order item is
+confirmed</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Difference is
+settled on
+srce bin
+location</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Difference
+has been
+posted to
+interface</name>
+		</event>
+		<and id="10">
+			<name/>
+		</and>
+		<and id="11">
+			<name/>
+		</and>
+		<xor id="12">
+			<name/>
+		</xor>
+		<xor id="13">
+			<name/>
+		</xor>
+		<arc id="14">
+			<flow source="10" target="3"/>
+		</arc>
+		<arc id="15">
+			<flow source="10" target="12"/>
+		</arc>
+		<arc id="16">
+			<flow source="1" target="11"/>
+		</arc>
+		<arc id="17">
+			<flow source="3" target="1"/>
+		</arc>
+		<arc id="18">
+			<flow source="12" target="5"/>
+		</arc>
+		<arc id="19">
+			<flow source="12" target="6"/>
+		</arc>
+		<arc id="20">
+			<flow source="4" target="2"/>
+		</arc>
+		<arc id="21">
+			<flow source="2" target="10"/>
+		</arc>
+		<arc id="22">
+			<flow source="11" target="7"/>
+		</arc>
+		<arc id="23">
+			<flow source="11" target="13"/>
+		</arc>
+		<arc id="24">
+			<flow source="13" target="8"/>
+		</arc>
+		<arc id="25">
+			<flow source="13" target="9"/>
+		</arc>
+	</epc>
+</epml:epml>

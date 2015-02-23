@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Creation and
+Processing of
+Quality
+Notifications</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Notification
+Creation on
+Intranet</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Notification
+Archiving</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Worklist
+Generation for
+Notifications</name>
+		</function>
+		<event defRef="5" id="5">
+			<name> Quality
+notification
+is completed</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Defect
+requires
+manual quality
+notification</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Notification
+is created on
+the Intranet</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Notification
+is to be
+archived</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Effectiveness
+of a task is
+documented at
+a later date</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Worklist is
+created</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Notification
+Should Be
+Entered in
+Intranet</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Worklist is
+to be created</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> QM order is
+created for
+quality
+notification</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Notification
+is archived</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> External
+sales force/
+customer
+complaint is
+to be created</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Evaluation
+from QMIS
+indicates
+quality
+problems</name>
+		</event>
+		<and id="17">
+			<name/>
+		</and>
+		<or id="18">
+			<name/>
+		</or>
+		<event defRef="41" id="41">
+			<name> Automatically
+created
+quality
+notification
+is to be
+edited</name>
+		</event>
+		<event defRef="45" id="45">
+			<name> Quality
+notification
+is activated
+from defects</name>
+		</event>
+		<event defRef="47" id="47">
+			<name> Goods receipt
+posted</name>
+		</event>
+		<xor id="55">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="73">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="20">
+			<flow source="1" target="18"/>
+		</arc>
+		<arc id="21">
+			<flow source="17" target="5"/>
+		</arc>
+		<arc id="22">
+			<flow source="17" target="9"/>
+		</arc>
+		<arc id="24">
+			<flow source="18" target="17"/>
+		</arc>
+		<arc id="25">
+			<flow source="18" target="13"/>
+		</arc>
+		<arc id="26">
+			<flow source="2" target="7"/>
+		</arc>
+		<arc id="27">
+			<flow source="8" target="3"/>
+		</arc>
+		<arc id="28">
+			<flow source="11" target="2"/>
+		</arc>
+		<arc id="29">
+			<flow source="12" target="4"/>
+		</arc>
+		<arc id="30">
+			<flow source="3" target="14"/>
+		</arc>
+		<arc id="32">
+			<flow source="4" target="10"/>
+		</arc>
+		<arc id="56">
+			<flow source="41" target="55"/>
+			<name>2</name>
+		</arc>
+		<arc id="65">
+			<flow source="45" target="55"/>
+			<name>2</name>
+		</arc>
+		<arc id="66">
+			<flow source="47" target="55"/>
+			<name>2</name>
+		</arc>
+		<arc id="75">
+			<flow source="55" target="73"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="76">
+			<flow source="73" target="1"/>
+		</arc>
+		<arc id="85">
+			<flow source="15" target="73"/>
+			<name>1</name>
+		</arc>
+		<arc id="88">
+			<flow source="16" target="55"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="89">
+			<flow source="6" target="55"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

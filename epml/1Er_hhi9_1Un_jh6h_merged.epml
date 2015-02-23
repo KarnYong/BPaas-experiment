@@ -1,0 +1,982 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="2" id="2">
+			<name> Transfer of
+Personnel
+Costs</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Copy Actual
+Data to Cost
+Center Plan</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Cost Accrual
+- Plan</name>
+		</function>
+		<function defRef="5" id="5">
+			<name> Overhead
+Calculation
+(Business
+Process)</name>
+		</function>
+		<function defRef="6" id="6">
+			<name>Splitting</name>
+		</function>
+		<function defRef="7" id="7">
+			<name> Secondary
+Cost Planning
+(Prop./ Fixed)</name>
+		</function>
+		<function defRef="8" id="8">
+			<name> Activity Type
+Planning</name>
+		</function>
+		<function defRef="9" id="9">
+			<name> Settlement of
+Overhead Cost
+Orders
+(Planning
+Data)</name>
+		</function>
+		<function defRef="10" id="10">
+			<name> Secondary
+Cost Planning
+(Full Costs)</name>
+		</function>
+		<function defRef="11" id="11">
+			<name> Order
+Budgeting</name>
+		</function>
+		<function defRef="12" id="12">
+			<name> Plan Indirect
+Activity
+Allocation
+(Indirect
+Entry)</name>
+		</function>
+		<function defRef="13" id="13">
+			<name> Definition of
+Activity Type
+for Cost
+Center</name>
+		</function>
+		<function defRef="14" id="14">
+			<name> Transfer of
+Depreciation/
+Interest
+(Activity-Independent)</name>
+		</function>
+		<function defRef="15" id="15">
+			<name> Transfer of
+Scheduled
+Activity from
+PP to
+CO-OM-CCA</name>
+		</function>
+		<function defRef="16" id="16">
+			<name> Template
+Allocation</name>
+		</function>
+		<function defRef="17" id="17">
+			<name> Budget
+Planning</name>
+		</function>
+		<function defRef="18" id="18">
+			<name> Planned
+Interest
+Calculation
+for Order</name>
+		</function>
+		<function defRef="19" id="19">
+			<name> Plan Cost
+Distribution</name>
+		</function>
+		<function defRef="20" id="20">
+			<name> Planning
+Revaluation</name>
+		</function>
+		<function defRef="21" id="21">
+			<name> Plan Indirect
+Activity
+Allocation
+(Manual Entry)</name>
+		</function>
+		<function defRef="22" id="22">
+			<name> Transfer of
+Statistical
+Key Figures
+from LIS
+(Plan)</name>
+		</function>
+		<function defRef="23" id="23">
+			<name> Resource
+Planning</name>
+		</function>
+		<function defRef="24" id="24">
+			<name> Process Cost
+Planning</name>
+		</function>
+		<function defRef="25" id="25">
+			<name> Primary Cost
+Planning (Full
+Costs)</name>
+		</function>
+		<function defRef="26" id="26">
+			<name> Redefinition
+of Plan
+Version</name>
+		</function>
+		<function defRef="27" id="27">
+			<name> Transfer of
+Scheduled
+Activity PP ->
+CO-ABC</name>
+		</function>
+		<function defRef="28" id="28">
+			<name> Overall
+Planning
+(Order)</name>
+		</function>
+		<function defRef="29" id="29">
+			<name> Overhead
+Calculation
+(Cost Center)</name>
+		</function>
+		<function defRef="30" id="30">
+			<name> Primary Cost
+Planning
+(Prop./ Fixed)</name>
+		</function>
+		<function defRef="31" id="31">
+			<name> Plan
+Reconciliation</name>
+		</function>
+		<function defRef="32" id="32">
+			<name> Copy Plan
+from Previous
+Year to Cost
+Center
+Planning</name>
+		</function>
+		<function defRef="33" id="33">
+			<name> Unit Costing
+(Order)</name>
+		</function>
+		<function defRef="34" id="34">
+			<name> Plan Cost
+Assessment</name>
+		</function>
+		<function defRef="35" id="35">
+			<name> Transfer of
+Depreciation/
+Interest
+(Activity-Dependent)</name>
+		</function>
+		<function defRef="36" id="36">
+			<name> Cost Element
+Planning
+(Order)</name>
+		</function>
+		<function defRef="37" id="37">
+			<name> Process
+Quantity
+Planning</name>
+		</function>
+		<function defRef="38" id="38">
+			<name> Manual
+Planning of
+Statistical
+Key Figures</name>
+		</function>
+		<function defRef="39" id="39">
+			<name> Formula
+Planning</name>
+		</function>
+		<function defRef="40" id="40">
+			<name> Resource
+Planning
+(Order)</name>
+		</function>
+		<function defRef="41" id="41">
+			<name> Overhead
+Calculation
+(Overhead Cost
+Order)</name>
+		</function>
+		<function defRef="42" id="42">
+			<name> Cost Element
+Planning
+(Order with
+Integrated
+Planning)</name>
+		</function>
+		<function defRef="43" id="43">
+			<name> Periodic
+Reposting of
+Plan Data</name>
+		</function>
+		<function defRef="44" id="44">
+			<name> Planned Price
+Calculation</name>
+		</function>
+		<event defRef="45" id="45">
+			<name> Order with
+Integrated
+Planning Was
+Settled</name>
+		</event>
+		<event defRef="46" id="46">
+			<name> Process
+quantities
+(output) to be
+planned using
+SOP planning</name>
+		</event>
+		<event defRef="47" id="47">
+			<name> Cost and
+activity
+planning
+executed</name>
+		</event>
+		<event defRef="48" id="48">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<event defRef="49" id="49">
+			<name> Order Costs
+Are to Be
+Integrated in
+Cost Planning</name>
+		</event>
+		<event defRef="50" id="50">
+			<name> Business
+Process Is
+Processed</name>
+		</event>
+		<event defRef="51" id="51">
+			<name> Exist. cost
+planning is to
+be revaluated</name>
+		</event>
+		<event defRef="52" id="52">
+			<name> Overhead Was
+Charged to
+Cost Center</name>
+		</event>
+		<event defRef="53" id="53">
+			<name> Plan
+Reconciliation
+Performed</name>
+		</event>
+		<event defRef="54" id="54">
+			<name> Process
+Quantities
+Planned</name>
+		</event>
+		<event defRef="55" id="55">
+			<name> Planned Costs
+Distributed</name>
+		</event>
+		<event defRef="56" id="56">
+			<name> New Period to
+Be Planned
+(Copy of
+Previous
+Year's Plan)</name>
+		</event>
+		<event defRef="57" id="57">
+			<name> Order is
+budgeted</name>
+		</event>
+		<event defRef="58" id="58">
+			<name> Interest
+Calculated</name>
+		</event>
+		<event defRef="59" id="59">
+			<name> Secondary
+cost planning
+to be carried
+out</name>
+		</event>
+		<event defRef="60" id="60">
+			<name> Process costs
+were allocated</name>
+		</event>
+		<event defRef="61" id="61">
+			<name> Cost center
+planning
+prepared</name>
+		</event>
+		<event defRef="62" id="62">
+			<name> Cost Center
+Plan Data
+Exists</name>
+		</event>
+		<event defRef="63" id="63">
+			<name> Planned
+Periodic
+Reposting
+Performed</name>
+		</event>
+		<event defRef="64" id="64">
+			<name> Key figures
+transferred
+from LIS</name>
+		</event>
+		<event defRef="65" id="65">
+			<name> Planned Costs
+Accrued</name>
+		</event>
+		<event defRef="66" id="66">
+			<name> Personnel
+cost planning
+is complete</name>
+		</event>
+		<event defRef="67" id="67">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<event defRef="68" id="68">
+			<name> Primary cost
+planning to be
+carried out</name>
+		</event>
+		<event defRef="69" id="69">
+			<name> Statistical
+key figure was
+entered for
+reference
+object</name>
+		</event>
+		<event defRef="70" id="70">
+			<name> Splitting
+Executed</name>
+		</event>
+		<event defRef="71" id="71">
+			<name> Depreciation
+/interest to
+be transferred
+(activity-dependent)</name>
+		</event>
+		<event defRef="72" id="72">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<event defRef="73" id="73">
+			<name> Key figures
+from LIS to be
+transferred</name>
+		</event>
+		<event defRef="74" id="74">
+			<name> Order
+Planning Is
+Prepared</name>
+		</event>
+		<event defRef="75" id="75">
+			<name> New Period to
+Be Planned
+(New
+Definition of
+Plan Version)</name>
+		</event>
+		<event defRef="76" id="76">
+			<name> New Period to
+Be Planned
+(Copy of
+Actual)</name>
+		</event>
+		<event defRef="77" id="77">
+			<name> Plan Data for
+Order Exists</name>
+		</event>
+		<event defRef="78" id="78">
+			<name> Statistical
+key figure
+exists</name>
+		</event>
+		<event defRef="79" id="79">
+			<name> Process
+quantities
+(output) to be
+planned
+manually</name>
+		</event>
+		<event defRef="80" id="80">
+			<name> Depreciation
+/ interest to
+be transferred
+(activity-independent)</name>
+		</event>
+		<event defRef="81" id="81">
+			<name> Budget is
+planned</name>
+		</event>
+		<event defRef="82" id="82">
+			<name> Overhead
+Costs
+Allocated
+Through
+Overhead
+Charges</name>
+		</event>
+		<event defRef="83" id="83">
+			<name> Business
+process is
+planned</name>
+		</event>
+		<and id="84">
+			<name/>
+		</and>
+		<and id="85">
+			<name/>
+			<configurableConnector/>
+		</and>
+		<and id="86">
+			<name/>
+		</and>
+		<and id="87">
+			<name/>
+		</and>
+		<and id="88">
+			<name/>
+		</and>
+		<and id="89">
+			<name/>
+		</and>
+		<and id="90">
+			<name/>
+		</and>
+		<and id="91">
+			<name/>
+			<configurableConnector/>
+		</and>
+		<and id="92">
+			<name/>
+		</and>
+		<and id="93">
+			<name/>
+		</and>
+		<and id="94">
+			<name/>
+		</and>
+		<and id="95">
+			<name/>
+		</and>
+		<and id="96">
+			<name/>
+		</and>
+		<and id="97">
+			<name/>
+		</and>
+		<or id="98">
+			<name/>
+		</or>
+		<or id="99">
+			<name/>
+		</or>
+		<or id="100">
+			<name/>
+		</or>
+		<xor id="101">
+			<name/>
+		</xor>
+		<xor id="102">
+			<name/>
+		</xor>
+		<xor id="103">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="104">
+			<name/>
+		</xor>
+		<xor id="105">
+			<name/>
+		</xor>
+		<xor id="106">
+			<name/>
+		</xor>
+		<xor id="107">
+			<name/>
+		</xor>
+		<function defRef="259" id="259">
+			<name> Imputed Costs
+- Plan</name>
+		</function>
+		<event defRef="274" id="274">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<event defRef="279" id="279">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<xor id="457">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="461">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="465">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="469">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="473">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="477">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="108">
+			<flow source="2" target="99"/>
+		</arc>
+		<arc id="109">
+			<flow source="45" target="87"/>
+		</arc>
+		<arc id="110">
+			<flow source="84" target="9"/>
+		</arc>
+		<arc id="111">
+			<flow source="3" target="106"/>
+		</arc>
+		<arc id="112">
+			<flow source="46" target="27"/>
+		</arc>
+		<arc id="113">
+			<flow source="101" target="51"/>
+		</arc>
+		<arc id="114">
+			<flow source="101" target="105"/>
+		</arc>
+		<arc id="115">
+			<flow source="101" target="74"/>
+		</arc>
+		<arc id="116">
+			<flow source="85" target="92"/>
+		</arc>
+		<arc id="117">
+			<flow source="102" target="99"/>
+		</arc>
+		<arc id="120">
+			<flow source="86" target="11"/>
+		</arc>
+		<arc id="121">
+			<flow source="86" target="18"/>
+		</arc>
+		<arc id="122">
+			<flow source="5" target="88"/>
+		</arc>
+		<arc id="123">
+			<flow source="6" target="70"/>
+		</arc>
+		<arc id="124">
+			<flow source="49" target="84"/>
+		</arc>
+		<arc id="125">
+			<flow source="7" target="96"/>
+		</arc>
+		<arc id="126">
+			<flow source="103" target="37"/>
+		</arc>
+		<arc id="127">
+			<flow source="8" target="94"/>
+		</arc>
+		<arc id="128">
+			<flow source="50" target="95"/>
+		</arc>
+		<arc id="129">
+			<flow source="51" target="20"/>
+		</arc>
+		<arc id="130">
+			<flow source="52" target="34"/>
+		</arc>
+		<arc id="131">
+			<flow source="53" target="6"/>
+		</arc>
+		<arc id="132">
+			<flow source="9" target="45"/>
+		</arc>
+		<arc id="133">
+			<flow source="10" target="96"/>
+		</arc>
+		<arc id="134">
+			<flow source="11" target="57"/>
+		</arc>
+		<arc id="135">
+			<flow source="87" target="31"/>
+		</arc>
+		<arc id="136">
+			<flow source="12" target="88"/>
+		</arc>
+		<arc id="137">
+			<flow source="13" target="94"/>
+		</arc>
+		<arc id="138">
+			<flow source="54" target="5"/>
+		</arc>
+		<arc id="139">
+			<flow source="55" target="29"/>
+		</arc>
+		<arc id="140">
+			<flow source="14" target="102"/>
+		</arc>
+		<arc id="141">
+			<flow source="88" target="83"/>
+		</arc>
+		<arc id="142">
+			<flow source="56" target="32"/>
+		</arc>
+		<arc id="144">
+			<flow source="16" target="60"/>
+		</arc>
+		<arc id="145">
+			<flow source="17" target="81"/>
+		</arc>
+		<arc id="146">
+			<flow source="18" target="58"/>
+		</arc>
+		<arc id="147">
+			<flow source="58" target="84"/>
+		</arc>
+		<arc id="148">
+			<flow source="104" target="46"/>
+		</arc>
+		<arc id="149">
+			<flow source="104" target="79"/>
+		</arc>
+		<arc id="150">
+			<flow source="19" target="55"/>
+		</arc>
+		<arc id="151">
+			<flow source="59" target="85"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="152">
+			<flow source="60" target="87"/>
+		</arc>
+		<arc id="153">
+			<flow source="20" target="105"/>
+		</arc>
+		<arc id="154">
+			<flow source="61" target="93"/>
+		</arc>
+		<arc id="155">
+			<flow source="62" target="91"/>
+		</arc>
+		<arc id="156">
+			<flow source="89" target="12"/>
+		</arc>
+		<arc id="157">
+			<flow source="89" target="21"/>
+		</arc>
+		<arc id="158">
+			<flow source="63" target="90"/>
+		</arc>
+		<arc id="159">
+			<flow source="64" target="107"/>
+		</arc>
+		<arc id="160">
+			<flow source="65" target="90"/>
+		</arc>
+		<arc id="161">
+			<flow source="66" target="2"/>
+		</arc>
+		<arc id="162">
+			<flow source="67" target="103"/>
+			<name>1</name>
+		</arc>
+		<arc id="163">
+			<flow source="98" target="28"/>
+		</arc>
+		<arc id="164">
+			<flow source="98" target="33"/>
+		</arc>
+		<arc id="165">
+			<flow source="98" target="36"/>
+		</arc>
+		<arc id="166">
+			<flow source="98" target="40"/>
+		</arc>
+		<arc id="167">
+			<flow source="98" target="42"/>
+		</arc>
+		<arc id="168">
+			<flow source="21" target="88"/>
+		</arc>
+		<arc id="169">
+			<flow source="105" target="61"/>
+		</arc>
+		<arc id="170">
+			<flow source="22" target="64"/>
+		</arc>
+		<arc id="171">
+			<flow source="106" target="101"/>
+		</arc>
+		<arc id="172">
+			<flow source="90" target="19"/>
+		</arc>
+		<arc id="173">
+			<flow source="23" target="96"/>
+		</arc>
+		<arc id="174">
+			<flow source="24" target="104"/>
+		</arc>
+		<arc id="175">
+			<flow source="25" target="96"/>
+		</arc>
+		<arc id="176">
+			<flow source="26" target="106"/>
+		</arc>
+		<arc id="177">
+			<flow source="99" target="59"/>
+		</arc>
+		<arc id="178">
+			<flow source="91" target="4"/>
+			<name>1</name>
+		</arc>
+		<arc id="179">
+			<flow source="91" target="17"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="180">
+			<flow source="91" target="95"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="181">
+			<flow source="91" target="43"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="183">
+			<flow source="68" target="97"/>
+		</arc>
+		<arc id="184">
+			<flow source="28" target="100"/>
+		</arc>
+		<arc id="185">
+			<flow source="69" target="107"/>
+		</arc>
+		<arc id="186">
+			<flow source="70" target="44"/>
+		</arc>
+		<arc id="187">
+			<flow source="29" target="52"/>
+		</arc>
+		<arc id="188">
+			<flow source="71" target="35"/>
+		</arc>
+		<arc id="189">
+			<flow source="92" target="7"/>
+		</arc>
+		<arc id="190">
+			<flow source="92" target="10"/>
+		</arc>
+		<arc id="192">
+			<flow source="73" target="22"/>
+		</arc>
+		<arc id="193">
+			<flow source="74" target="98"/>
+		</arc>
+		<arc id="194">
+			<flow source="30" target="96"/>
+		</arc>
+		<arc id="195">
+			<flow source="100" target="77"/>
+		</arc>
+		<arc id="196">
+			<flow source="31" target="53"/>
+		</arc>
+		<arc id="197">
+			<flow source="32" target="106"/>
+		</arc>
+		<arc id="198">
+			<flow source="75" target="26"/>
+		</arc>
+		<arc id="199">
+			<flow source="76" target="3"/>
+		</arc>
+		<arc id="200">
+			<flow source="33" target="100"/>
+		</arc>
+		<arc id="201">
+			<flow source="34" target="49"/>
+		</arc>
+		<arc id="202">
+			<flow source="35" target="102"/>
+		</arc>
+		<arc id="203">
+			<flow source="36" target="100"/>
+		</arc>
+		<arc id="204">
+			<flow source="37" target="54"/>
+		</arc>
+		<arc id="205">
+			<flow source="77" target="41"/>
+		</arc>
+		<arc id="206">
+			<flow source="78" target="38"/>
+		</arc>
+		<arc id="207">
+			<flow source="79" target="103"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="208">
+			<flow source="38" target="69"/>
+		</arc>
+		<arc id="209">
+			<flow source="93" target="8"/>
+		</arc>
+		<arc id="210">
+			<flow source="93" target="13"/>
+		</arc>
+		<arc id="211">
+			<flow source="80" target="14"/>
+		</arc>
+		<arc id="212">
+			<flow source="39" target="96"/>
+		</arc>
+		<arc id="213">
+			<flow source="94" target="107"/>
+		</arc>
+		<arc id="214">
+			<flow source="95" target="24"/>
+		</arc>
+		<arc id="215">
+			<flow source="96" target="62"/>
+		</arc>
+		<arc id="216">
+			<flow source="82" target="86"/>
+		</arc>
+		<arc id="217">
+			<flow source="40" target="100"/>
+		</arc>
+		<arc id="218">
+			<flow source="41" target="82"/>
+		</arc>
+		<arc id="219">
+			<flow source="42" target="100"/>
+		</arc>
+		<arc id="220">
+			<flow source="43" target="63"/>
+		</arc>
+		<arc id="221">
+			<flow source="107" target="68"/>
+		</arc>
+		<arc id="222">
+			<flow source="44" target="47"/>
+		</arc>
+		<arc id="223">
+			<flow source="83" target="16"/>
+		</arc>
+		<arc id="224">
+			<flow source="97" target="23"/>
+		</arc>
+		<arc id="225">
+			<flow source="97" target="25"/>
+		</arc>
+		<arc id="226">
+			<flow source="97" target="30"/>
+		</arc>
+		<arc id="227">
+			<flow source="97" target="39"/>
+		</arc>
+		<arc id="228">
+			<flow source="104" target="89"/>
+		</arc>
+		<arc id="458">
+			<flow source="4" target="457"/>
+			<name>1</name>
+		</arc>
+		<arc id="459">
+			<flow source="259" target="457"/>
+			<name>2</name>
+		</arc>
+		<arc id="460">
+			<flow source="457" target="65"/>
+		</arc>
+		<arc id="462">
+			<flow source="48" target="461"/>
+			<name>1</name>
+		</arc>
+		<arc id="463">
+			<flow source="279" target="461"/>
+			<name>2</name>
+		</arc>
+		<arc id="464">
+			<flow source="461" target="15"/>
+		</arc>
+		<arc id="468">
+			<flow source="465" target="72"/>
+		</arc>
+		<arc id="470">
+			<flow source="469" target="67"/>
+			<name>1</name>
+		</arc>
+		<arc id="471">
+			<flow source="469" target="465"/>
+			<name>2</name>
+		</arc>
+		<arc id="472">
+			<flow source="27" target="469"/>
+		</arc>
+		<arc id="474">
+			<flow source="473" target="465"/>
+			<name>1</name>
+		</arc>
+		<arc id="475">
+			<flow source="473" target="274"/>
+			<name>2</name>
+		</arc>
+		<arc id="476">
+			<flow source="15" target="473"/>
+		</arc>
+		<arc id="478">
+			<flow source="477" target="85"/>
+			<name>1</name>
+		</arc>
+		<arc id="480">
+			<flow source="72" target="477"/>
+		</arc>
+		<arc id="481">
+			<flow source="91" target="259"/>
+			<name>2</name>
+		</arc>
+		<arc id="482">
+			<flow source="274" target="85"/>
+			<name>2</name>
+		</arc>
+		<arc id="483">
+			<flow source="477" target="103"/>
+			<name>2</name>
+		</arc>
+	</epc>
+</epml:epml>

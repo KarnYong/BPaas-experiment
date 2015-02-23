@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Notification
+Printing</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Notification
+Creation/
+Processing</name>
+		</function>
+		<event defRef="3" id="3">
+			<name> Maintenance
+order is
+created
+automatically
+for
+maintenance
+notification</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Measurement
+doc. should be
+created for
+notif.</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Maintenance
+notification
+is in process</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Shop papers
+are to be
+printed from
+notification</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Maintenance
+tasks are to
+be processed</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Notification
+is printed</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Notification
+papers are to
+be printed</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Notification
+is to be
+processed by
+planner group</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Maintenance
+requirement
+has arisen</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Shop papers
+are to be
+printed from
+order</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Maintenance
+notification
+is to be
+generated from
+maintenance
+order</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Print log is
+created</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> Notification
+and order
+assigned to
+one another</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Order type
+supports
+automatic
+generation of
+a notification</name>
+		</event>
+		<event defRef="17" id="17">
+			<name> Task is
+completed</name>
+		</event>
+		<event defRef="18" id="18">
+			<name> Maintenance
+order to be
+created
+directly from
+maintenance
+notification</name>
+		</event>
+		<and id="19">
+			<name/>
+		</and>
+		<and id="20">
+			<name/>
+		</and>
+		<and id="21">
+			<name/>
+		</and>
+		<and id="22">
+			<name/>
+		</and>
+		<or id="23">
+			<name/>
+		</or>
+		<xor id="24">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="25">
+			<name/>
+		</xor>
+		<event defRef="60" id="60">
+			<name> Notifications
+Combined in
+Order</name>
+		</event>
+		<and id="71">
+			<name/>
+			<configurableConnector/>
+		</and>
+		<arc id="26">
+			<flow source="1" target="19"/>
+		</arc>
+		<arc id="27">
+			<flow source="2" target="23"/>
+		</arc>
+		<arc id="28">
+			<flow source="7" target="24"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="29">
+			<flow source="24" target="2"/>
+		</arc>
+		<arc id="30">
+			<flow source="19" target="8"/>
+		</arc>
+		<arc id="31">
+			<flow source="19" target="14"/>
+		</arc>
+		<arc id="32">
+			<flow source="9" target="25"/>
+		</arc>
+		<arc id="33">
+			<flow source="10" target="24"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="35">
+			<flow source="12" target="21"/>
+		</arc>
+		<arc id="36">
+			<flow source="25" target="1"/>
+		</arc>
+		<arc id="37">
+			<flow source="23" target="4"/>
+		</arc>
+		<arc id="38">
+			<flow source="23" target="6"/>
+		</arc>
+		<arc id="39">
+			<flow source="23" target="9"/>
+		</arc>
+		<arc id="40">
+			<flow source="23" target="17"/>
+		</arc>
+		<arc id="41">
+			<flow source="23" target="22"/>
+		</arc>
+		<arc id="42">
+			<flow source="23" target="18"/>
+		</arc>
+		<arc id="43">
+			<flow source="13" target="20"/>
+		</arc>
+		<arc id="44">
+			<flow source="20" target="24"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="45">
+			<flow source="21" target="25"/>
+		</arc>
+		<arc id="46">
+			<flow source="15" target="21"/>
+		</arc>
+		<arc id="47">
+			<flow source="16" target="20"/>
+		</arc>
+		<arc id="48">
+			<flow source="22" target="3"/>
+		</arc>
+		<arc id="49">
+			<flow source="22" target="5"/>
+		</arc>
+		<arc id="95">
+			<flow source="60" target="71"/>
+			<name>2</name>
+		</arc>
+		<arc id="107">
+			<flow source="71" target="24"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="108">
+			<flow source="11" target="71"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Evaluations
+in the Quality
+Information
+System (QMIS)</name>
+		</function>
+		<event defRef="2" id="2">
+			<name> Evaluation to
+be performed
+using the
+Logistics
+Information
+System</name>
+		</event>
+		<event defRef="3" id="3">
+			<name> Evaluation
+from QMIS
+indicates
+quality
+problems</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Evaluation
+carried out</name>
+		</event>
+		<or id="5">
+			<name/>
+		</or>
+		<arc id="6">
+			<flow source="2" target="1"/>
+		</arc>
+		<arc id="7">
+			<flow source="5" target="3"/>
+		</arc>
+		<arc id="8">
+			<flow source="5" target="4"/>
+		</arc>
+		<arc id="9">
+			<flow source="1" target="5"/>
+		</arc>
+	</epc>
+</epml:epml>

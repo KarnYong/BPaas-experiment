@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Consignment/
+Pipeline
+Settlement</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Invoice
+Release</name>
+		</function>
+		<event defRef="3" id="3">
+			<name> Consignment/
+pipeline
+liability is
+created</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Consignment/
+pipeline
+liabilities
+are to be
+settled</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Invoice is
+posted and
+blocked for
+payment</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Consignment/
+pipeline
+settlement
+document
+transmitted</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Payment must
+be effected</name>
+		</event>
+		<and id="8">
+			<name/>
+		</and>
+		<or id="31">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<arc id="12">
+			<flow source="8" target="5"/>
+		</arc>
+		<arc id="13">
+			<flow source="8" target="6"/>
+		</arc>
+		<arc id="14">
+			<flow source="5" target="2"/>
+		</arc>
+		<arc id="16">
+			<flow source="1" target="8"/>
+		</arc>
+		<arc id="17">
+			<flow source="2" target="7"/>
+		</arc>
+		<arc id="34">
+			<flow source="31" target="1"/>
+		</arc>
+		<arc id="39">
+			<flow source="3" target="31"/>
+			<name>1</name>
+		</arc>
+		<arc id="40">
+			<flow source="4" target="31"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Maintenance
+Call
+Processing</name>
+		</function>
+		<function defRef="2" id="2">
+			<name>Object Costing</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Maintenance
+Plan Costing</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Maintenance
+Plan
+Scheduling</name>
+		</function>
+		<event defRef="5" id="5">
+			<name> Maintenance
+plan is
+created</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Cost
+Estimates
+Should Be Made
+for
+Maintenance
+Plans</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Objects in
+Maintenance
+Plans Should
+Be Calculated</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Call horizon
+is reached</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Maintenance
+Costs
+Determined</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Call horizon
+is not reached</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Maintenance
+calls are
+updated</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Maintenance
+plan is to be
+scheduled
+manually</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Maintenance
+notification
+is to be
+created for
+each
+maintenance
+item</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Service entry
+sheet to be
+created for
+each
+maintenance
+item</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> Maintenance
+plan to be
+scheduled
+according to
+maintenance
+strategy</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Maintenance
+plan released
+triggered</name>
+		</event>
+		<event defRef="17" id="17">
+			<name> Schedule
+counter
+reading mtce
+plan</name>
+		</event>
+		<event defRef="18" id="18">
+			<name> Maintenance
+order to be
+created per
+maintenance
+item</name>
+		</event>
+		<event defRef="19" id="19">
+			<name> Maintenance
+plan is to be
+scheduled
+automatically</name>
+		</event>
+		<event defRef="20" id="20">
+			<name> Dates + due
+maintenance
+packages are
+determined</name>
+		</event>
+		<event defRef="21" id="21">
+			<name> Maintenance
+call waits</name>
+		</event>
+		<event defRef="22" id="22">
+			<name> Maintenance
+plan calls are
+processed</name>
+		</event>
+		<and id="23">
+			<name/>
+			<configurableConnector/>
+		</and>
+		<and id="24">
+			<name/>
+		</and>
+		<and id="25">
+			<name/>
+			<configurableConnector/>
+		</and>
+		<and id="26">
+			<name/>
+		</and>
+		<or id="27">
+			<name/>
+		</or>
+		<or id="29">
+			<name/>
+		</or>
+		<or id="30">
+			<name/>
+		</or>
+		<xor id="31">
+			<name/>
+		</xor>
+		<xor id="32">
+			<name/>
+		</xor>
+		<xor id="33">
+			<name/>
+		</xor>
+		<xor id="34">
+			<name/>
+		</xor>
+		<xor id="35">
+			<name/>
+		</xor>
+		<event defRef="80" id="80">
+			<name> Service order
+should be
+created per
+maint. item</name>
+		</event>
+		<or id="97">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<xor id="101">
+			<name/>
+		</xor>
+		<xor id="145">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<or id="149">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<xor id="153">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="157">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="36">
+			<flow source="23" target="35"/>
+		</arc>
+		<arc id="37">
+			<flow source="5" target="24"/>
+		</arc>
+		<arc id="38">
+			<flow source="31" target="23"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="39">
+			<flow source="31" target="25"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="40">
+			<flow source="6" target="3"/>
+		</arc>
+		<arc id="41">
+			<flow source="7" target="2"/>
+		</arc>
+		<arc id="44">
+			<flow source="11" target="31"/>
+		</arc>
+		<arc id="45">
+			<flow source="32" target="13"/>
+		</arc>
+		<arc id="47">
+			<flow source="32" target="18"/>
+		</arc>
+		<arc id="48">
+			<flow source="27" target="9"/>
+		</arc>
+		<arc id="50">
+			<flow source="12" target="33"/>
+		</arc>
+		<arc id="51">
+			<flow source="2" target="27"/>
+		</arc>
+		<arc id="52">
+			<flow source="24" target="4"/>
+		</arc>
+		<arc id="53">
+			<flow source="15" target="33"/>
+		</arc>
+		<arc id="54">
+			<flow source="33" target="24"/>
+		</arc>
+		<arc id="57">
+			<flow source="16" target="33"/>
+		</arc>
+		<arc id="58">
+			<flow source="29" target="6"/>
+		</arc>
+		<arc id="59">
+			<flow source="29" target="7"/>
+		</arc>
+		<arc id="60">
+			<flow source="17" target="33"/>
+		</arc>
+		<arc id="61">
+			<flow source="34" target="21"/>
+		</arc>
+		<arc id="62">
+			<flow source="34" target="22"/>
+		</arc>
+		<arc id="63">
+			<flow source="30" target="29"/>
+		</arc>
+		<arc id="64">
+			<flow source="30" target="26"/>
+		</arc>
+		<arc id="65">
+			<flow source="19" target="33"/>
+		</arc>
+		<arc id="66">
+			<flow source="3" target="27"/>
+		</arc>
+		<arc id="67">
+			<flow source="35" target="1"/>
+		</arc>
+		<arc id="68">
+			<flow source="4" target="30"/>
+		</arc>
+		<arc id="69">
+			<flow source="25" target="35"/>
+		</arc>
+		<arc id="70">
+			<flow source="26" target="11"/>
+		</arc>
+		<arc id="71">
+			<flow source="26" target="20"/>
+		</arc>
+		<arc id="106">
+			<flow source="97" target="101"/>
+			<name>2</name>
+		</arc>
+		<arc id="109">
+			<flow source="101" target="80"/>
+		</arc>
+		<arc id="146">
+			<flow source="32" target="145"/>
+			<name>1</name>
+		</arc>
+		<arc id="147">
+			<flow source="101" target="145"/>
+			<name>2</name>
+		</arc>
+		<arc id="148">
+			<flow source="145" target="14"/>
+		</arc>
+		<arc id="151">
+			<flow source="149" target="97"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="152">
+			<flow source="1" target="149"/>
+		</arc>
+		<arc id="154">
+			<flow source="153" target="25"/>
+			<name>1</name>
+		</arc>
+		<arc id="156">
+			<flow source="10" target="153"/>
+		</arc>
+		<arc id="158">
+			<flow source="157" target="23"/>
+			<name>1</name>
+		</arc>
+		<arc id="160">
+			<flow source="8" target="157"/>
+		</arc>
+		<arc id="161">
+			<flow source="153" target="23"/>
+			<name>2</name>
+		</arc>
+		<arc id="162">
+			<flow source="157" target="25"/>
+			<name>2</name>
+		</arc>
+		<arc id="163">
+			<flow source="149" target="32"/>
+			<name>1</name>
+		</arc>
+		<arc id="165">
+			<flow source="97" target="34"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

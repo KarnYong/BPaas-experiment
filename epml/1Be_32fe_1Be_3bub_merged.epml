@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Stock
+Placement
+Processing</name>
+		</function>
+		<function defRef="2" id="2">
+			<name>Confirmation</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Difference
+Processing</name>
+		</function>
+		<event defRef="4" id="4">
+			<name> Material
+placed in
+storage</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Transfer
+order item is
+confirmed</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> TO item
+confirmed
+without
+differences</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Goods receipt
+posted</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Transfer
+order item
+with
+difference
+exists</name>
+		</event>
+		<function defRef="21" id="21">
+			<name> Stock Removal
+Processing</name>
+		</function>
+		<event defRef="25" id="25">
+			<name> Material is
+removed from
+stock</name>
+		</event>
+		<event defRef="27" id="27">
+			<name> Goods issue
+is posted</name>
+		</event>
+		<or id="29">
+			<name/>
+			<configurableConnector/>
+		</or>
+		<xor id="43">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="10">
+			<flow source="1" target="4"/>
+		</arc>
+		<arc id="13">
+			<flow source="4" target="2"/>
+		</arc>
+		<arc id="15">
+			<flow source="7" target="1"/>
+		</arc>
+		<arc id="16">
+			<flow source="8" target="3"/>
+		</arc>
+		<arc id="17">
+			<flow source="3" target="5"/>
+		</arc>
+		<arc id="38">
+			<flow source="25" target="29"/>
+			<name>2</name>
+		</arc>
+		<arc id="41">
+			<flow source="27" target="21"/>
+		</arc>
+		<arc id="42">
+			<flow source="21" target="25"/>
+		</arc>
+		<arc id="46">
+			<flow source="43" target="8"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="56">
+			<flow source="43" target="6"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="57">
+			<flow source="29" target="43"/>
+		</arc>
+		<arc id="58">
+			<flow source="2" target="29"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

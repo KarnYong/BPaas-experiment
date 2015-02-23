@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+  <directory name="Main">
+  <epc epcId="1" name="EPC">
+		<function defRef="1" id="1">
+			<name> Manual
+Depreciation
+Planning</name>
+		</function>
+		<function defRef="2" id="2">
+			<name>
+Unit-of-Production
+Depreciation</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Depreciation
+Processing</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Depreciation
+Posting</name>
+		</function>
+		<event defRef="5" id="5">
+			<name> G/L accounts
+were posted</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Create tax
+depreciation
+area</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> New valuation
+key is
+necessary</name>
+		</event>
+		<event defRef="8" id="8">
+			<name>
+Unit-of-production
+depreciation
+is to be
+posted</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Create group
+depreciation
+area</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Useful life
+should be
+changed</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Shortened
+fiscal year is
+necessary</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> New valuation
+method is
+defined</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Recalcula-
+tion of de-
+preciation was
+carried out</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Depreciation
+should be
+posted
+regularly</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> Costs were
+settled by
+cost element
+to asset under
+construction</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Create
+foreign
+currency
+depreciation
+area</name>
+		</event>
+		<event defRef="17" id="17">
+			<name>
+Cost-accounting
+depreciation/
+interest
+transferred to
+Cost
+Accounting</name>
+		</event>
+		<event defRef="18" id="18">
+			<name> Create
+statistical
+depreciation
+area</name>
+		</event>
+		<event defRef="19" id="19">
+			<name> Costs were
+settled with
+secondary cost
+elements to
+asset under
+construction</name>
+		</event>
+		<event defRef="20" id="20">
+			<name> Create ins./
+net worth tax
+depreciation
+area</name>
+		</event>
+		<event defRef="21" id="21">
+			<name>
+Unit-of-production
+method of
+depreciation
+has been
+prepared</name>
+		</event>
+		<event defRef="22" id="22">
+			<name> Features of
+depreciation
+area must be
+changed</name>
+		</event>
+		<event defRef="23" id="23">
+			<name> Manual
+depreciation
+is planned</name>
+		</event>
+		<event defRef="24" id="24">
+			<name> [Depreciation
+posting run
+was carried
+out]</name>
+		</event>
+		<event defRef="25" id="25">
+			<name> Special tax
+depreciation
+is only to be
+partly claimed</name>
+		</event>
+		<event defRef="26" id="26">
+			<name> Employment
+fluctuations
+are to be
+included when
+calculating
+depreciation</name>
+		</event>
+		<event defRef="27" id="27">
+			<name> [Unplanned
+depreciation
+should be
+used]</name>
+		</event>
+		<and id="28">
+			<name/>
+		</and>
+		<and id="29">
+			<name/>
+		</and>
+		<or id="30">
+			<name/>
+		</or>
+		<xor id="31">
+			<name/>
+		</xor>
+		<xor id="32">
+			<name/>
+		</xor>
+		<xor id="33">
+			<name/>
+		</xor>
+		<arc id="34">
+			<flow source="6" target="30"/>
+		</arc>
+		<arc id="35">
+			<flow source="7" target="31"/>
+		</arc>
+		<arc id="36">
+			<flow source="8" target="33"/>
+		</arc>
+		<arc id="37">
+			<flow source="31" target="3"/>
+		</arc>
+		<arc id="38">
+			<flow source="9" target="30"/>
+		</arc>
+		<arc id="39">
+			<flow source="10" target="31"/>
+		</arc>
+		<arc id="40">
+			<flow source="11" target="31"/>
+		</arc>
+		<arc id="41">
+			<flow source="12" target="29"/>
+		</arc>
+		<arc id="42">
+			<flow source="32" target="4"/>
+		</arc>
+		<arc id="43">
+			<flow source="13" target="32"/>
+		</arc>
+		<arc id="44">
+			<flow source="14" target="29"/>
+		</arc>
+		<arc id="45">
+			<flow source="30" target="31"/>
+		</arc>
+		<arc id="46">
+			<flow source="15" target="32"/>
+		</arc>
+		<arc id="47">
+			<flow source="28" target="5"/>
+		</arc>
+		<arc id="48">
+			<flow source="28" target="17"/>
+		</arc>
+		<arc id="49">
+			<flow source="28" target="24"/>
+		</arc>
+		<arc id="50">
+			<flow source="16" target="30"/>
+		</arc>
+		<arc id="51">
+			<flow source="1" target="23"/>
+		</arc>
+		<arc id="52">
+			<flow source="29" target="32"/>
+		</arc>
+		<arc id="53">
+			<flow source="33" target="1"/>
+		</arc>
+		<arc id="54">
+			<flow source="18" target="30"/>
+		</arc>
+		<arc id="55">
+			<flow source="19" target="32"/>
+		</arc>
+		<arc id="56">
+			<flow source="2" target="21"/>
+		</arc>
+		<arc id="57">
+			<flow source="3" target="12"/>
+		</arc>
+		<arc id="58">
+			<flow source="20" target="30"/>
+		</arc>
+		<arc id="59">
+			<flow source="21" target="32"/>
+		</arc>
+		<arc id="60">
+			<flow source="4" target="28"/>
+		</arc>
+		<arc id="61">
+			<flow source="22" target="31"/>
+		</arc>
+		<arc id="62">
+			<flow source="23" target="30"/>
+		</arc>
+		<arc id="63">
+			<flow source="25" target="33"/>
+		</arc>
+		<arc id="64">
+			<flow source="26" target="2"/>
+		</arc>
+		<arc id="65">
+			<flow source="27" target="33"/>
+		</arc>
+ </epc>
+  </directory>
+</epml:epml>

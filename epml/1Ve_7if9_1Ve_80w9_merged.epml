@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Invoice List
+Processing</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Pro forma
+invoice
+processing</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Processing
+Billing
+Documents</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Billing
+Document
+Cancellation</name>
+		</function>
+		<event defRef="5" id="5">
+			<name> Billing
+document to be
+cancelled</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Order-related
+invoice to be
+created</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Billing date
+is reached</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Bil. doc. is
+released for
+billing</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Pro forma
+invoice for
+order/
+delivery to be
+created</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Delivery is
+relevant for
+billing</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Invoice list
+date has
+arrived</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Goods issue
+is posted</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Pro forma
+invoice is
+created</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Billing
+document/
+items are
+cancelled</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> Invoice list
+is created</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Customer
+invoice is
+posted</name>
+		</event>
+		<event defRef="17" id="17">
+			<name> Contract is
+created</name>
+		</event>
+		<and id="18">
+			<name/>
+		</and>
+		<and id="19">
+			<name/>
+		</and>
+		<and id="20">
+			<name/>
+		</and>
+		<and id="21">
+			<name/>
+		</and>
+		<xor id="22">
+			<name/>
+		</xor>
+		<arc id="23">
+			<flow source="5" target="4"/>
+		</arc>
+		<arc id="24">
+			<flow source="22" target="3"/>
+		</arc>
+		<arc id="25">
+			<flow source="18" target="1"/>
+		</arc>
+		<arc id="26">
+			<flow source="1" target="19"/>
+		</arc>
+		<arc id="27">
+			<flow source="6" target="22"/>
+		</arc>
+		<arc id="28">
+			<flow source="7" target="20"/>
+		</arc>
+		<arc id="29">
+			<flow source="8" target="18"/>
+		</arc>
+		<arc id="30">
+			<flow source="2" target="13"/>
+		</arc>
+		<arc id="31">
+			<flow source="9" target="2"/>
+		</arc>
+		<arc id="32">
+			<flow source="10" target="21"/>
+		</arc>
+		<arc id="33">
+			<flow source="11" target="18"/>
+		</arc>
+		<arc id="34">
+			<flow source="12" target="21"/>
+		</arc>
+		<arc id="35">
+			<flow source="3" target="8"/>
+		</arc>
+		<arc id="36">
+			<flow source="19" target="15"/>
+		</arc>
+		<arc id="37">
+			<flow source="19" target="16"/>
+		</arc>
+		<arc id="38">
+			<flow source="4" target="14"/>
+		</arc>
+		<arc id="39">
+			<flow source="20" target="22"/>
+		</arc>
+		<arc id="40">
+			<flow source="17" target="20"/>
+		</arc>
+		<arc id="41">
+			<flow source="21" target="22"/>
+		</arc>
+	</epc>
+</epml:epml>

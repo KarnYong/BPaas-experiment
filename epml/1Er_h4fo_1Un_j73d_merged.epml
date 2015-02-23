@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Profit Center
+Planning</name>
+		</function>
+		<function defRef="2" id="2">
+			<name>Sales Planning</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Product Cost
+Planning</name>
+		</function>
+		<function defRef="4" id="4">
+			<name> Profit
+Planning</name>
+		</function>
+		<function defRef="5" id="5">
+			<name> Cost and
+Activity
+Planning</name>
+		</function>
+		<event defRef="6" id="6">
+			<name> New Period to
+Be Planned
+(Copy of
+Previous
+Year's Plan)</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Plan sales
+quantities
+transferred to
+LIS</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Cost estimate
+needs to be
+revised due to
+variances</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> New Period to
+Be Planned
+(Copy of
+Actual)</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Plan Sales
+Quantities Are
+to Be
+Transferred to
+SOP</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Profit center
+planning to be
+prepared (copy
+actual)</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Cost and
+activity
+planning
+executed</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Profit center
+planning to be
+prepared
+(Excel upload)</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> Activity
+requirements
+transferred
+from
+production
+planning</name>
+		</event>
+		<event defRef="15" id="15">
+			<name> New Period to
+Be Planned
+(New
+Definition of
+Plan Version)</name>
+		</event>
+		<event defRef="16" id="16">
+			<name> Profit center
+planning to be
+prepared (new
+definition)</name>
+		</event>
+		<event defRef="17" id="17">
+			<name> Standard
+price updated
+in material
+master[]</name>
+		</event>
+		<event defRef="18" id="18">
+			<name> Control
+measures taken
+due to
+variances</name>
+		</event>
+		<event defRef="19" id="19">
+			<name> Sales plan is
+available</name>
+		</event>
+		<event defRef="20" id="20">
+			<name> Stock
+revaluated</name>
+		</event>
+		<event defRef="21" id="21">
+			<name> Results plan
+transferred to
+EC-PCA</name>
+		</event>
+		<event defRef="22" id="22">
+			<name> Fiscal year/
+period is to
+be costed</name>
+		</event>
+		<event defRef="23" id="23">
+			<name> Plan Proposal
+for Sales
+Planning to be
+Created</name>
+		</event>
+		<event defRef="24" id="24">
+			<name> Control
+measures set
+based on
+variances</name>
+		</event>
+		<event defRef="25" id="25">
+			<name> Profit center
+planning is to
+be prepared
+(copy plan)</name>
+		</event>
+		<event defRef="26" id="26">
+			<name> Plan Data for
+Order Exists</name>
+		</event>
+		<and id="27">
+			<name/>
+		</and>
+		<and id="28">
+			<name/>
+		</and>
+		<and id="29">
+			<name/>
+		</and>
+		<and id="30">
+			<name/>
+		</and>
+		<and id="31">
+			<name/>
+		</and>
+		<and id="32">
+			<name/>
+		</and>
+		<and id="33">
+			<name/>
+		</and>
+		<or id="34">
+			<name/>
+		</or>
+		<or id="35">
+			<name/>
+		</or>
+		<or id="36">
+			<name/>
+		</or>
+		<xor id="37">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="38">
+			<name/>
+		</xor>
+		<xor id="40">
+			<name/>
+		</xor>
+		<function defRef="85" id="85">
+			<name> Production
+Planning</name>
+		</function>
+		<event defRef="89" id="89">
+			<name> Long-Term
+Planning
+Evaluated</name>
+		</event>
+		<event defRef="96" id="96">
+			<name> Planned Order
+Created
+Automatically</name>
+		</event>
+		<event defRef="98" id="98">
+			<name> Master
+Production
+Scheduling
+Evaluated</name>
+		</event>
+		<event defRef="102" id="102">
+			<name> Forecast
+parameters
+exist</name>
+		</event>
+		<event defRef="104" id="104">
+			<name> Activity
+requirements
+to be
+transferred to
+Cost Planning</name>
+		</event>
+		<event defRef="106" id="106">
+			<name> Material
+Requirements
+Planning
+Evaluated</name>
+		</event>
+		<event defRef="111" id="111">
+			<name> Mat.forecast
+is to be
+carried out</name>
+		</event>
+		<and id="118">
+			<name/>
+		</and>
+		<and id="122">
+			<name/>
+		</and>
+		<or id="126">
+			<name/>
+		</or>
+		<xor id="129">
+			<name/>
+		</xor>
+		<xor id="132">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="185">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="189">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="41">
+			<flow source="34" target="4"/>
+		</arc>
+		<arc id="43">
+			<flow source="27" target="30"/>
+		</arc>
+		<arc id="44">
+			<flow source="27" target="35"/>
+		</arc>
+		<arc id="45">
+			<flow source="6" target="37"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="46">
+			<flow source="1" target="24"/>
+		</arc>
+		<arc id="47">
+			<flow source="9" target="37"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="49">
+			<flow source="11" target="40"/>
+		</arc>
+		<arc id="51">
+			<flow source="12" target="27"/>
+		</arc>
+		<arc id="52">
+			<flow source="13" target="40"/>
+		</arc>
+		<arc id="53">
+			<flow source="14" target="28"/>
+		</arc>
+		<arc id="54">
+			<flow source="15" target="37"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="55">
+			<flow source="2" target="36"/>
+		</arc>
+		<arc id="56">
+			<flow source="16" target="40"/>
+		</arc>
+		<arc id="57">
+			<flow source="29" target="17"/>
+		</arc>
+		<arc id="58">
+			<flow source="29" target="20"/>
+		</arc>
+		<arc id="59">
+			<flow source="30" target="32"/>
+		</arc>
+		<arc id="60">
+			<flow source="35" target="3"/>
+		</arc>
+		<arc id="61">
+			<flow source="17" target="34"/>
+		</arc>
+		<arc id="62">
+			<flow source="19" target="34"/>
+		</arc>
+		<arc id="63">
+			<flow source="31" target="12"/>
+		</arc>
+		<arc id="64">
+			<flow source="31" target="26"/>
+		</arc>
+		<arc id="65">
+			<flow source="3" target="38"/>
+		</arc>
+		<arc id="66">
+			<flow source="32" target="1"/>
+		</arc>
+		<arc id="67">
+			<flow source="38" target="8"/>
+		</arc>
+		<arc id="68">
+			<flow source="38" target="29"/>
+		</arc>
+		<arc id="70">
+			<flow source="33" target="18"/>
+		</arc>
+		<arc id="71">
+			<flow source="33" target="21"/>
+		</arc>
+		<arc id="72">
+			<flow source="40" target="32"/>
+		</arc>
+		<arc id="73">
+			<flow source="21" target="32"/>
+		</arc>
+		<arc id="74">
+			<flow source="22" target="35"/>
+		</arc>
+		<arc id="75">
+			<flow source="23" target="2"/>
+		</arc>
+		<arc id="76">
+			<flow source="4" target="33"/>
+		</arc>
+		<arc id="77">
+			<flow source="5" target="31"/>
+		</arc>
+		<arc id="78">
+			<flow source="36" target="7"/>
+		</arc>
+		<arc id="79">
+			<flow source="36" target="10"/>
+		</arc>
+		<arc id="80">
+			<flow source="36" target="19"/>
+		</arc>
+		<arc id="81">
+			<flow source="25" target="40"/>
+		</arc>
+		<arc id="82">
+			<flow source="26" target="30"/>
+		</arc>
+		<arc id="141">
+			<flow source="85" target="118"/>
+		</arc>
+		<arc id="146">
+			<flow source="129" target="85"/>
+		</arc>
+		<arc id="148">
+			<flow source="102" target="122"/>
+		</arc>
+		<arc id="151">
+			<flow source="118" target="96"/>
+		</arc>
+		<arc id="152">
+			<flow source="118" target="104"/>
+		</arc>
+		<arc id="153">
+			<flow source="118" target="126"/>
+		</arc>
+		<arc id="157">
+			<flow source="104" target="132"/>
+			<name>2</name>
+		</arc>
+		<arc id="166">
+			<flow source="111" target="122"/>
+		</arc>
+		<arc id="173">
+			<flow source="126" target="89"/>
+		</arc>
+		<arc id="174">
+			<flow source="126" target="98"/>
+		</arc>
+		<arc id="175">
+			<flow source="126" target="106"/>
+		</arc>
+		<arc id="178">
+			<flow source="122" target="129"/>
+		</arc>
+		<arc id="187">
+			<flow source="132" target="185"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="188">
+			<flow source="185" target="5"/>
+		</arc>
+		<arc id="190">
+			<flow source="189" target="28"/>
+			<name>1</name>
+		</arc>
+		<arc id="191">
+			<flow source="189" target="129"/>
+			<name>2</name>
+		</arc>
+		<arc id="192">
+			<flow source="10" target="189"/>
+		</arc>
+		<arc id="197">
+			<flow source="28" target="185"/>
+			<name>1</name>
+		</arc>
+		<arc id="199">
+			<flow source="37" target="132"/>
+			<name>2,1</name>
+		</arc>
+	</epc>
+</epml:epml>

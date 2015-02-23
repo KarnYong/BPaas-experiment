@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name>Credit Control</name>
+		</function>
+		<event defRef="2" id="2">
+			<name> Terms of
+credit have
+changed</name>
+		</event>
+		<event defRef="3" id="3">
+			<name> Change to
+terms of
+credit refused</name>
+		</event>
+		<event defRef="4" id="4">
+			<name> Document
+Blocked due to
+Insufficient
+Payment
+Guarantee</name>
+		</event>
+		<xor id="5">
+			<name/>
+		</xor>
+		<arc id="6">
+			<flow source="4" target="1"/>
+		</arc>
+		<arc id="7">
+			<flow source="1" target="5"/>
+		</arc>
+		<arc id="8">
+			<flow source="5" target="2"/>
+		</arc>
+		<arc id="9">
+			<flow source="5" target="3"/>
+		</arc>
+	</epc>
+</epml:epml>

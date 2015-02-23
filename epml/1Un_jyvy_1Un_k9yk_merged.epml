@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name>Quantity Units</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Foreign
+currencies</name>
+		</function>
+		<function defRef="3" id="3">
+			<name>File names</name>
+		</function>
+		<function defRef="4" id="4">
+			<name>Number ranges</name>
+		</function>
+		<event defRef="5" id="5">
+			<name> File Names
+Established</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Basic
+Settings to be
+made</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Units of
+Measure
+Specified</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Number Ranges
+Defined</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Foreign
+Currencies Are
+Specified</name>
+		</event>
+		<and id="10">
+			<name/>
+		</and>
+		<arc id="11">
+			<flow source="6" target="10"/>
+		</arc>
+		<arc id="12">
+			<flow source="1" target="7"/>
+		</arc>
+		<arc id="13">
+			<flow source="2" target="9"/>
+		</arc>
+		<arc id="14">
+			<flow source="10" target="1"/>
+		</arc>
+		<arc id="15">
+			<flow source="10" target="2"/>
+		</arc>
+		<arc id="16">
+			<flow source="10" target="3"/>
+		</arc>
+		<arc id="17">
+			<flow source="10" target="4"/>
+		</arc>
+		<arc id="18">
+			<flow source="3" target="5"/>
+		</arc>
+		<arc id="19">
+			<flow source="4" target="8"/>
+		</arc>
+	</epc>
+</epml:epml>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epml:epml xmlns:epml="http://www.epml.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.epml.de EPML_2.0.xsd">
+	<epc epcId="null" name="null">
+		<function defRef="1" id="1">
+			<name> Process
+Payment
+Request</name>
+		</function>
+		<function defRef="2" id="2">
+			<name> Perform
+Posting</name>
+		</function>
+		<function defRef="3" id="3">
+			<name> Posting
+Release</name>
+		</function>
+		<event defRef="4" id="4">
+			<name> Payment
+advice is sent</name>
+		</event>
+		<event defRef="5" id="5">
+			<name> Transaction
+was posted</name>
+		</event>
+		<event defRef="6" id="6">
+			<name> Valuation
+flows were
+generated</name>
+		</event>
+		<event defRef="7" id="7">
+			<name> Flows from
+realized
+gains/ losses
+were generated</name>
+		</event>
+		<event defRef="8" id="8">
+			<name> Netting
+proposal was
+accepted</name>
+		</event>
+		<event defRef="9" id="9">
+			<name> Flows were
+released for
+posting</name>
+		</event>
+		<event defRef="10" id="10">
+			<name> Payment
+request was
+generated</name>
+		</event>
+		<event defRef="11" id="11">
+			<name> Payment is
+transferred by
+EDI</name>
+		</event>
+		<event defRef="12" id="12">
+			<name> Customer open
+items were
+generated</name>
+		</event>
+		<event defRef="13" id="13">
+			<name> Payment
+medium
+transferred</name>
+		</event>
+		<event defRef="14" id="14">
+			<name> G/L posting
+was generated</name>
+		</event>
+		<and id="15">
+			<name/>
+		</and>
+		<or id="16">
+			<name/>
+		</or>
+		<xor id="18">
+			<name/>
+		</xor>
+		<event defRef="45" id="45">
+			<name> Currency
+option was
+exercised with
+cash
+settlement</name>
+		</event>
+		<event defRef="46" id="46">
+			<name> Termination
+flows generate
+settlement
+payments</name>
+		</event>
+		<xor id="55">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<xor id="87">
+			<name/>
+			<configurableConnector/>
+		</xor>
+		<arc id="20">
+			<flow source="1" target="16"/>
+		</arc>
+		<arc id="22">
+			<flow source="2" target="15"/>
+		</arc>
+		<arc id="24">
+			<flow source="8" target="3"/>
+		</arc>
+		<arc id="26">
+			<flow source="16" target="4"/>
+		</arc>
+		<arc id="27">
+			<flow source="16" target="11"/>
+		</arc>
+		<arc id="28">
+			<flow source="16" target="13"/>
+		</arc>
+		<arc id="29">
+			<flow source="10" target="1"/>
+		</arc>
+		<arc id="30">
+			<flow source="15" target="5"/>
+		</arc>
+		<arc id="31">
+			<flow source="15" target="18"/>
+		</arc>
+		<arc id="32">
+			<flow source="3" target="9"/>
+		</arc>
+		<arc id="33">
+			<flow source="18" target="10"/>
+		</arc>
+		<arc id="34">
+			<flow source="18" target="12"/>
+		</arc>
+		<arc id="35">
+			<flow source="18" target="14"/>
+		</arc>
+		<arc id="64">
+			<flow source="45" target="55"/>
+			<name>2</name>
+		</arc>
+		<arc id="65">
+			<flow source="46" target="55"/>
+			<name>2</name>
+		</arc>
+		<arc id="89">
+			<flow source="87" target="55"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="90">
+			<flow source="7" target="87"/>
+		</arc>
+		<arc id="94">
+			<flow source="9" target="55"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="95">
+			<flow source="6" target="55"/>
+			<name>2,1</name>
+		</arc>
+		<arc id="96">
+			<flow source="55" target="2"/>
+		</arc>
+	</epc>
+</epml:epml>
